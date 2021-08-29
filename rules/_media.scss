@@ -1,0 +1,18 @@
+@media screen and (max-width: 1000px) {
+    nav {
+        z-index: 1;
+        left: 0%;
+        width: 100%;
+        top: 1%;
+    }
+    .rules-s-li-cointainer {
+        line-height: 100px;
+        h2 {
+            font-size: 20px;
+        }
+        li {
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+}

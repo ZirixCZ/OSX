@@ -1,0 +1,20 @@
+@media screen and (max-width: 1000px) {
+  .parallaxCointainer {
+    background-color: black;
+    background-size: contain;
+  }
+  .title-cointainer {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 4%;
+  }
+  .title-cointainer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: #EF8829;
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=media.css.map */

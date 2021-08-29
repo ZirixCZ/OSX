@@ -1,0 +1,245 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1b1f22;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: absolute;
+  left: 70%;
+  width: 30%;
+}
+
+.dropdown {
+  position: absolute;
+  height: 10vh;
+  width: 30%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+}
+
+.dropdown #home-button {
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+}
+
+.dropdown #server-button {
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20%;
+  left: 90%;
+}
+
+.dropdown a, .dropdown button {
+  color: white;
+  text-decoration: none;
+}
+
+.server-info ul {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  top: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 80px;
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.4 ease;
+  transition: all 0.4 ease;
+}
+
+.server-info button:focus + ul {
+  -webkit-transition: all 0.4 ease;
+  transition: all 0.4 ease;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.title-cointainer {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.title-cointainer h1 {
+  border-bottom: 2px #c5c5c5 solid;
+  color: white;
+}
+
+#rules-s {
+  background-image: #2B2D42;
+  height: 200%;
+  width: 100%;
+}
+
+.rules-s-li-cointainer {
+  list-style-type: none;
+  position: relative;
+  left: 10%;
+  top: 50%;
+  color: white;
+  line-height: 100px;
+}
+
+.rules-s-li-cointainer a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.rules-s-li-cointainer li {
+  width: 80%;
+  font-size: 20px;
+  border-bottom: 1px white solid;
+}
+
+.rules-s-li-cointainer h2 {
+  font-size: 30px;
+}
+
+.arrows {
+  top: 80%;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  cursor: auto;
+}
+
+.arrows path {
+  stroke: #ffffff;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.856);
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    z-index: 1;
+    left: 0%;
+    width: 100%;
+    top: 1%;
+  }
+  .rules-s-li-cointainer {
+    line-height: 100px;
+  }
+  .rules-s-li-cointainer h2 {
+    font-size: 20px;
+  }
+  .rules-s-li-cointainer li {
+    width: 80%;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
